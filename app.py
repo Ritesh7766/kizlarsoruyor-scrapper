@@ -3,7 +3,8 @@ from scrapper.scrapper import Scrapper
 import json
 
 
-def get_json(keyword):
+# Retured the scrapped data in json format.
+def scrap_data(keyword):
     # Create a session
     session = Session(keyword)
 
@@ -20,4 +21,4 @@ def get_json(keyword):
 
 
 if __name__ == '__main__':
-    get_json(keyword='nestle')
+    scrap_data(keyword='nestle')
